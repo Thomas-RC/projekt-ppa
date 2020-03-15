@@ -1,3 +1,4 @@
+
 on:
   push:
     branches:
@@ -23,7 +24,7 @@ jobs:
         npm install
     - name: Run tests
       run: |
-        npm run test
+	npm run test
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v1
       with:
